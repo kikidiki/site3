@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+  <title>BFashion</title>
+</head>
+<body onload="startTime()">
+    <div class="header">
+      <h2>Welcome to BFashion</h2>
+      <p>We hope u'll find what u need.</p>
+      <div id="txt"></div>
+    </div>
+    <div id="search">
+  		<a href="../../index.php"  href="javascript:void(0)">Home</a>
+  		<a href="../HTML/Introduction.html" href="javascript:void(0)">HTML</a>
+  		<a href="../CSS/Introduction.html" href="javascript:void(0)">CSS</a>
+  		<a href="#" class="active" href="javascript:void(0)">JavaScript</a>
+
+    </div>
+
+  <div id= "table" style="float:left; width: 14%;">
+    <div class="HTML">
+          <div>
+            <h2 style="padding-left:3%" href="javascript:void(0)">
+              JS Tutorial
+            </h2>
+          </div>
+        <div class="scroll">
+          <a href="#" class="active" href="javascript:void(0)"> JS Introduction</a></br>
+          <a href="Where to.html" href="javascript:void(0)"> JS Where To</a></br>
+          <a href="Output.html" href="javascript:void(0)"> JS Output</a></br>
+          <a href="#" href="javascript:void(0)"> JS Comments</a></br>
+          <a href="#" href="javascript:void(0)"> JS Variables</a></br>
+          <a href="#" href="javascript:void(0)"> JS Arithmetic</a></br>
+          <a href="#" href="javascript:void(0)"> JS Assignment</a></br>
+          <a href="#" href="javascript:void(0)"> JS Data Types</a></br>
+          <a href="#" href="javascript:void(0)"> JS Box Functions</a></br>
+          <a href="#" href="javascript:void(0)"> JS Objects</a></br>
+          <a href="#" href="javascript:void(0)"> JS String Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS String Search</a></br>
+          <a href="#" href="javascript:void(0)"> JS String Templates</a></br>
+          <a href="#" href="javascript:void(0)"> JS Numbers</a></br>
+          <a href="#" href="javascript:void(0)"> JS Number Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Arrays</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Sort</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Iteration</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Const</a></br>
+          <a href="#" href="javascript:void(0)"> JS Dates</a></br>
+          <a href="#" href="javascript:void(0)"> JS Date Formats</a></br>
+          <a href="#" href="javascript:void(0)"> JS Date Get Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Date Set Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Math</a></br>
+          <a href="#" href="javascript:void(0)"> JS Random</a></br>
+        </div>
+
+</div>
+  </div>
+
+  	<div class="pog" style="float:right; width: 64%">
+        <div style="overflow: auto;">
+          <div style="margin-right: 20%"><h2 id="accordion">JavaScript Introduction</h2></div>
+          <a id="Prev" href="#">Prev</a>
+          <a id="Next" href="Where to.html">Next</a>
+        </div>
+
+        <div class="edit" style="margin-top:10px;">
+        	One of many JavaScript HTML methods is <div class="bck">getElementById()</div>.
+			<br><br>The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":
+			<div class="exempllu">
+				<h3>Example</h3>
+				<div class="exempluu">
+					<span style="color:black"><span style="color:red">
+					</span> document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">innerHTML</span> = <span style="color:brown">"Hello JavaScript"</span>; </span>
+				</div>
+			</div>
+			<div class="note">JavaScript accepts both double and single quotes:</div>
+			<div class="exempllu">
+				<h3>Example</h3>
+				<div class="exempluu">
+					<span style="color:black"><span style="color:red">
+					</span> document.<span style="color:black">getElementById</span>(<span style="color:brown">'demo'</span>).<span style="color:black">innerHTML</span> = <span style="color:brown">'Hello JavaScript'</span>; </span>
+				</div>
+			</div>
+    	</div>
+
+        <div class="edit">
+        	<h3>JavaScript Can Change HTML Styles (CSS)</h3>
+        	<div class="exempllu">
+				<h3>Example</h3>
+				<div class="exempluu">
+					<span style="color:black"><span style="color:red">
+					</span> document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">style</span>.<span style="color:black">fontSize</span> = <span style="color:brown">"35px"</span>; </span>
+				</div>
+			</div>
+        </div>
+
+        <div class="edit">
+        	<h3>JavaScript Can Hide HTML Elements</h3>
+        	Hiding HTML elements can be done by changing the <span class="bck">display</span> style:
+        	<div class="exempllu">
+				<h3>Example</h3>
+				<div class="exempluu">
+					<span style="color:black"><span style="color:red">
+					</span> document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">style</span>.<span style="color:black">display</span> = <span style="color:brown">"none"</span>; </span>
+				</div>
+			</div>
+        </div>
+        <div class="edit">
+        	<h3>JavaScript Can Show HTML Elements</h3>
+        	Showing hidden HTML elements can also be done by changing the <span class="bck">display</span> style:
+        	<div class="exempllu">
+				<h3>Example</h3>
+				<div class="exempluu">
+					<span style="color:black"><span style="color:red">
+					</span> document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">style</span>.<span style="color:black">display</span> = <span style="color:brown">"block"</span>; </span>
+				</div>
+			</div>
+        </div>
+
+        <div style="overflow: auto; margin-bottom: 20px; margin-top: 20px;">
+          <a id="Prev" href="#">Prev</a>
+          <a id="Next" href="Where to.html">Next</a>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+		<script src="../../JS/JS.js"></script>
+    <script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</html>

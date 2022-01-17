@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+  <title>BFashion</title>
+</head>
+<body onload="startTime()">
+    <div class="header">
+      <h2>Welcome to BFashion</h2>
+      <p>We hope u'll find what u need.</p>
+      <div id="txt"></div>
+    </div>
+    <div id="search">
+  		<a href="../../index.php"  href="javascript:void(0)">Home</a>
+  		<a href="../HTML/Introduction.html" href="javascript:void(0)">HTML</a>
+  		<a href="../CSS/Introduction.html" href="javascript:void(0)">CSS</a>
+  		<a href="#" class="active" href="javascript:void(0)">JavaScript</a>
+
+    </div>
+
+  <div id= "table" style="float:left; width: 14%;">
+    <div class="HTML">
+          <div>
+            <h2 style="padding-left:3%" href="javascript:void(0)">
+              JS Tutorial
+            </h2>
+          </div>
+        <div class="scroll">
+          <a href="Introduction.html" href="javascript:void(0)"> JS Introduction</a></br>
+          <a href="Where to.html" href="javascript:void(0)"> JS Where To</a></br>
+          <a href="#" class="active" href="javascript:void(0)"> JS Output</a></br>
+          <a href="#" href="javascript:void(0)"> JS Comments</a></br>
+          <a href="#" href="javascript:void(0)"> JS Variables</a></br>
+          <a href="#" href="javascript:void(0)"> JS Arithmetic</a></br>
+          <a href="#" href="javascript:void(0)"> JS Assignment</a></br>
+          <a href="#" href="javascript:void(0)"> JS Data Types</a></br>
+          <a href="#" href="javascript:void(0)"> JS Box Functions</a></br>
+          <a href="#" href="javascript:void(0)"> JS Objects</a></br>
+          <a href="#" href="javascript:void(0)"> JS String Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS String Search</a></br>
+          <a href="#" href="javascript:void(0)"> JS String Templates</a></br>
+          <a href="#" href="javascript:void(0)"> JS Numbers</a></br>
+          <a href="#" href="javascript:void(0)"> JS Number Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Arrays</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Sort</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Iteration</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Const</a></br>
+          <a href="#" href="javascript:void(0)"> JS Dates</a></br>
+          <a href="#" href="javascript:void(0)"> JS Date Formats</a></br>
+          <a href="#" href="javascript:void(0)"> JS Date Get Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Date Set Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Math</a></br>
+          <a href="#" href="javascript:void(0)"> JS Random</a></br>
+        </div>
+
+</div>
+  </div>
+
+  	<div class="pog" style="float:right; width: 64%">
+        <div style="overflow: auto;">
+          <div style="margin-right: 20%"><h2 id="accordion">JavaScript Output</h2></div>
+          <a id="Prev" href="Where to.html">Prev</a>
+          <a id="Next" href="#">Next</a>
+        </div>
+
+        <div class="edit" style="margin-top:10px;">
+        	<h3>JavaScript Display Possibilities</h3>
+          JavaScript can "display" data in different ways:
+          <ul>
+            <li>Writing into an HTML element, using <span class="bck">innerHTML</span>.</li>
+            <li>Writing into the HTML output using <span class="bck">document.write()</span>.</li>
+            <li>Writing into an alert box, using <span class="bck">window.alert()</span>.</li>
+            <li>Writing into the browser console, using <span class="bck">console.log()</span>.</li>
+          </ul>
+		      </div>
+          <div class="edit">
+            <h3>Using innerHTML</h3>
+            To access an HTML element, JavaScript can use the <span class="bck">document.getElementById(id)</span> method.
+            <br><br>The <span class="bck">id</span> attribute defines the HTML element. The <span class="bck">innerHTML</span> property defines the HTML content:
+            <div class="exempllu">
+              <h3>Example</h3>
+              <div class="exempluu">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+                  <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br>
+                  <br>
+                  <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Web Page<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+                   <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My First Paragraph<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+                      <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> id<span style="color:mediumblue">="demo"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+                  <br>
+                  <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br><span style="color:red">
+                  </span> document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">innerHTML</span> = <span style="color:red">5</span> + <span style="color:red">6</span>;<br><span style="color:red">
+                  </span>    </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br>
+                  <br>
+                  <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                  <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+              </div>
+            </div>
+            <div class="note">Changing the innerHTML property of an HTML element is a common way to display data in HTML.</div>
+          </div>
+          <div class="edit">
+            <h3>Using document.write()</h3>
+            For testing purposes, it is convenient to use <span class="bck">document.write()</span>:
+            <div class="exempllu">
+              <h3>Example</h3>
+              <div class="exempluu">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+                  <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Web Page<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+                  <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+                  <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br>document.<span style="color:black">write</span>(<span style="color:red">5</span> + <span style="color:red">6</span>);<br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br>
+                  <br>
+                  <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                  <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+              </div>
+            </div>
+            <div class="warning">Using document.write() after an HTML document is loaded, will <b>delete all existing HTML:</b></div>
+            <div class="exempllu">
+              <h3>Example</h3>
+              <div class="exempluu">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Web Page<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+                 <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>button<span style="color:red"> type<span style="color:mediumblue">="button"</span> onclick<span style="color:mediumblue">="document.write(5 + 6)"</span></span><span style="color:mediumblue">&gt;</span></span>Try it<span style="color:brown"><span style="color:mediumblue">&lt;</span>/button<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+              </div>
+            </div>
+            <div class="note">The document.write() method should only be used for testing.</div>
+          </div>
+          <div class="edit">
+            <h3>Using window.alert()</h3>
+            You can use an alert box to display data:
+            <div class="exempllu">
+              <h3>Example</h3>
+              <div class="exempluu">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Web Page<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+                 <br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br>window.<span style="color:black">alert</span>(<span style="color:red">5</span> + <span style="color:red">6</span>);<br>
+                </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br>
+                <br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+              </div>
+            </div>
+            You can skip the <span class="bck">window</span> keyword.
+            <br><br>In JavaScript, the window object is the global scope object, that means that variables, properties, and methods by default belong to the window object. This also means that specifying the <span class="bck">window</span> keyword is optional:
+            <div class="exempllu">
+              <h3>Example</h3>
+              <div class="exempluu">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Web Page<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+                 <br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br><span style="color:black">alert</span>(<span style="color:red">5</span> + <span style="color:red">6</span>);<br>
+                </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br>
+                <br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="edit">
+            <h3>Using console.log()</h3>
+            For debugging purposes, you can call the <span class="bck">console.log()</span> method in the browser to display data.
+            <div class="exempllu">
+              <h3>Example</h3>
+              <div class="exempluu">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br>
+                <br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br>
+                console.<span style="color:black">log</span>(<span style="color:red">5</span> + <span style="color:red">6</span>);<br>
+                </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br>
+                <br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="edit">
+            <h3>JavaScript Print</h3>
+            JavaScript does not have any print object or print methods.
+            <br><br>You cannot access output devices from JavaScript.
+            <br><br>The only exception is that you can call the <span class="bck">window.print()</span> method in the browser to print the content of the current window.
+            <div class="exempllu">
+              <h3>Example</h3>
+              <div class="exempluu">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>button<span style="color:red"> onclick<span style="color:mediumblue">="window.print()"</span></span><span style="color:mediumblue">&gt;</span></span>Print this page<span style="color:brown"><span style="color:mediumblue">&lt;</span>/button<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+              </div>
+            </div>
+          </div>
+          <div style="overflow: auto; margin-bottom: 20px; margin-top: 20px;">
+          <a id="Prev" href="Where to.html">Prev</a>
+          <a id="Next" href="#">Next</a>
+        </div>
+          </div>
+
+          
+
+        
+
+    </div>
+</div>
+
+
+</body>
+		<script src="../../JS/JS.js"></script>
+    <script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</html>

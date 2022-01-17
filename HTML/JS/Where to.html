@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+  <title>BFashion</title>
+</head>
+<body onload="startTime()">
+    <div class="header">
+      <h2>Welcome to BFashion</h2>
+      <p>We hope u'll find what u need.</p>
+      <div id="txt"></div>
+    </div>
+    <div id="search">
+  		<a href="../../index.php"  href="javascript:void(0)">Home</a>
+  		<a href="../HTML/Introduction.html" href="javascript:void(0)">HTML</a>
+  		<a href="../CSS/Introduction.html" href="javascript:void(0)">CSS</a>
+  		<a href="#" class="active" href="javascript:void(0)">JavaScript</a>
+
+    </div>
+
+  <div id= "table" style="float:left; width: 14%;">
+    <div class="HTML">
+          <div>
+            <h2 style="padding-left:3%" href="javascript:void(0)">
+              JS Tutorial
+            </h2>
+          </div>
+        <div class="scroll">
+          <a href="Introduction.html" href="javascript:void(0)"> JS Introduction</a></br>
+          <a href="#" class="active" href="javascript:void(0)"> JS Where To</a></br>
+          <a href="Output.html" href="javascript:void(0)"> JS Output</a></br>
+          <a href="#" href="javascript:void(0)"> JS Comments</a></br>
+          <a href="#" href="javascript:void(0)"> JS Variables</a></br>
+          <a href="#" href="javascript:void(0)"> JS Arithmetic</a></br>
+          <a href="#" href="javascript:void(0)"> JS Assignment</a></br>
+          <a href="#" href="javascript:void(0)"> JS Data Types</a></br>
+          <a href="#" href="javascript:void(0)"> JS Box Functions</a></br>
+          <a href="#" href="javascript:void(0)"> JS Objects</a></br>
+          <a href="#" href="javascript:void(0)"> JS String Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS String Search</a></br>
+          <a href="#" href="javascript:void(0)"> JS String Templates</a></br>
+          <a href="#" href="javascript:void(0)"> JS Numbers</a></br>
+          <a href="#" href="javascript:void(0)"> JS Number Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Arrays</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Sort</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Iteration</a></br>
+          <a href="#" href="javascript:void(0)"> JS Array Const</a></br>
+          <a href="#" href="javascript:void(0)"> JS Dates</a></br>
+          <a href="#" href="javascript:void(0)"> JS Date Formats</a></br>
+          <a href="#" href="javascript:void(0)"> JS Date Get Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Date Set Methods</a></br>
+          <a href="#" href="javascript:void(0)"> JS Math</a></br>
+          <a href="#" href="javascript:void(0)"> JS Random</a></br>
+        </div>
+
+</div>
+  </div>
+
+  	<div class="pog" style="float:right; width: 64%">
+        <div style="overflow: auto;">
+          <div style="margin-right: 20%"><h2 id="accordion">JavaScript Where To</h2></div>
+          <a id="Prev" href="Introduction.html">Prev</a>
+          <a id="Next" href="Output.html">Next</a>
+        </div>
+
+        <div class="edit" style="margin-top:10px;">
+          <h3>The &lt;script&gt; Tag</h3>
+        	In HTML, JavaScript code is inserted between <span class="bck">&lt;script&gt;</span> and <span class="bck">&lt;/script&gt;</span> tags.
+          <div class="exempllu">
+            <h3>Example</h3>
+            <div class="exempluu">
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br>
+              document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">innerHTML</span> = <span style="color:brown">"My First JavaScript"</span>;<br>
+              </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+            </div>
+          </div>
+			<div class="note">
+        Old JavaScript examples may use a type attribute: &lt;script type="text/javascript"&gt;.<br>
+        The type attribute is not required. JavaScript is the default scripting language in HTML.
+      </div>
+
+      <div class="edit">
+        A JavaScript <span class="bck">function</span> is a block of JavaScript code, that can be executed when "called" for.
+        <br><br>For example, a function can be called when an event occurs, like when the user clicks a button.
+      </div>
+      <div class="edit">
+        You can place any number of scripts in an HTML document.
+        <br><br>Scripts can be placed in the <span class="bck">&lt;body&gt;</span>, or in the <span class="bck">&lt;head&gt;</span> section of an HTML page, or in both.
+      </div>
+      <div class="edit">
+        <h3>JavaScript in &lt;head&gt;</h3>
+        In this example, a JavaScript <span class="bck">function</span> is placed in the <span class="bck">&lt;head&gt;</span> section of an HTML page.
+        <br><br>The function is invoked (called) when a button is clicked:
+        <div class="exempllu">
+          <h3>Example</h3>
+          <div class="exempluu">
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br>
+            <span style="color:mediumblue">function</span> myFunction() {<br><span style="color:red">
+            </span>&nbsp;&nbsp;document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">innerHTML</span> = <span style="color:brown">"Paragraph changed."</span>;<br><span style="color:red">
+            </span>}<br>
+            </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;            </span>body<span style="color:mediumblue">&gt;</span></span>
+            <p><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>Demo JavaScript in Head<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>
+            <br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> id<span style="color:mediumblue">="demo"</span></span><span style="color:mediumblue">&gt;</span></span>A Paragraph<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>button<span style="color:red"> type<span style="color:mediumblue">="button"</span> onclick<span style="color:mediumblue">="myFunction()"</span></span><span style="color:mediumblue">&gt;</span></span>Try 
+            it<span style="color:brown"><span style="color:mediumblue">&lt;</span>/button<span style="color:mediumblue">&gt;</span></span></p>
+            <p><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="edit">
+        <h3>JavaScript in &lt;body&gt;</h3>
+        In this example, a JavaScript function is placed in the <span class="bck">&lt;body&gt;</span> section of an HTML page.
+        The function is invoked (called) when a button is clicked:
+        <div class="exempllu">
+          <h3>Example</h3>
+          <div class="exempluu">
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span>
+            <br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>Demo JavaScript in Body<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>
+            <br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> id<span style="color:mediumblue">="demo"</span></span><span style="color:mediumblue">&gt;</span></span>A Paragraph<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            <br>
+              <span style="color:brown"><span style="color:mediumblue">&lt;</span>button<span style="color:red"> type<span style="color:mediumblue">="button"</span> onclick<span style="color:mediumblue">="myFunction()"</span></span><span style="color:mediumblue">&gt;</span></span>Try 
+            it<span style="color:brown"><span style="color:mediumblue">&lt;</span>/button<span style="color:mediumblue">&gt;</span></span><br>
+            <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br>
+            <span style="color:mediumblue">function</span> myFunction() {<br><span style="color:red">
+            </span>  &nbsp; document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">innerHTML</span> = <span style="color:brown">"Paragraph changed."</span>;<br><span style="color:red">
+            </span>}<br>
+            </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br>
+            <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="edit">
+        <h3>External JavaScript</h3>
+        Scripts can also be placed in external files:
+        <div class="exempllu">
+          <h3>External file: myScript.js</h3>
+          <div class="exempluu">
+            <span style="color:black">
+            <span style="color:mediumblue">function</span> myFunction() {<br><span style="color:red">
+            </span>&nbsp; document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">innerHTML</span> = <span style="color:brown">"Paragraph changed."</span>;<br><span style="color:red">
+            </span>}<span style="color:red">
+            </span> </span>
+          </div>      
+        </div>
+        External scripts are practical when the same code is used in many different web pages.
+        <br><br>JavaScript files have the file extension .js.
+        <br><br>To use an external script, put the name of the script file in the src (source) attribute of a <span class="bck">&lt;script&gt;</span> tag:
+        <div class="exempllu">
+          <h3>Example</h3>
+          <div class="exempluu">
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:red"> src<span style="color:mediumblue">="myScript.js"</span></span><span style="color:mediumblue">&gt;</span></span>
+          </div>        
+        </div>
+        You can place an external script reference in <span class="bck">&lt;head&gt;</span> or <span class="bck">&lt;body&gt;</span> as you like.
+        <br><br>The script will behave as if it was located exactly where the <span class="bck">&lt;script&gt;</span> tag is located.
+        <div class="note">External scripts cannot contain <span class="bck">&lt;script&gt;</span> tags.</div>
+      </div>
+
+      <div class="edit">
+        <h3>External JavaScript Advantages</h3>
+        Placing scripts in external files has some advantages:
+        <ul>
+          <li>It separates HTML and code</li>
+          <li>It makes HTML and JavaScript easier to read and maintain</li>
+          <li>Cached JavaScript files can speed up page loads</li>
+        </ul>
+        To add several script files to one page  - use several script tags:
+        <div class="exempllu">
+          <h3>Example</h3>
+          <div class="exempluu">
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:red"> src<span style="color:mediumblue">="myScript1.js"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:black"></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:red"> src<span style="color:mediumblue">="myScript2.js"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:black"></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="edit">
+        <h3>External References</h3>
+        An external script can be referenced in 3 different ways:
+        <ul>
+          <li>With a full URL (a full web address)</li>
+          <li>With a file path (like /js/)</li>
+          <li>Without any path</li>
+        </ul>
+        This example uses a <span style="font-weight: bold;">full URL</span> to link to myScript.js:
+        <div class="exempllu">
+          <h3>Example</h3>
+          <div class="exempluu">
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:red"> src<span style="color:mediumblue">="https://www.w3schools.com/js/myScript.js"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:black"></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        This example uses a file path to link to myScript.js:
+        <div class="exempllu">
+          <h3>Example</h3>
+          <div class="exempluu">
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:red"> src<span style="color:mediumblue">="/js/myScript.js"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:black"></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        This example uses no path to link to myScript.js:
+        <div class="exempllu">
+          <h3>Example</h3>
+          <div class="exempluu">
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:red"> src<span style="color:mediumblue">="myScript.js"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:black"></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+      </div>
+
+        <div style="overflow: auto; margin-bottom: 20px; margin-top: 20px;">
+          <a id="Prev" href="Introduction.html">Prev</a>
+          <a id="Next" href="Output.html">Next</a>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+		<script src="../../JS/JS.js"></script>
+    <script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</html>

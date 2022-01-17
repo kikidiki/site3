@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+  <title>BFashion</title>
+</head>
+<body>
+    <div class="header">
+      <h2>Welcome to BFashion</h2>
+      <p>We hope u'll find what u need.</p>
+    </div>
+    <div id="search">
+  		<a href="../../index.php"  href="javascript:void(0)">Home</a>
+  		<a href="../HTML/Introduction.html" href="javascript:void(0)">HTML</a>
+  		<a href="#" class="active" href="javascript:void(0)">CSS</a>
+  		<a href="../JS/Introduction.html" href="javascript:void(0)">JavaScript</a>
+
+    </div>
+
+  <div id= "table" style="float:left; width: 14%;">
+    <div class="HTML">
+          <div>
+            <h2 style="padding-left:3%" href="javascript:void(0)">
+              CSS Tutorial
+            </h2>
+          </div>
+        <div class="scroll">
+          <a href="Introduction.html" href="javascript:void(0)"> CSS Introduction</a></br>
+          <a href="Syntax.html" href="javascript:void(0)"> CSS Syntax</a></br>
+          <a href="Selector.html" class="active" href="javascript:void(0)"> CSS Selector</a></br>
+          <a href="#" href="javascript:void(0)"> CSS How To</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Comments</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Colors</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Backgrounds</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Borders</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Margins</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Padding</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Height/Width</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Box Model</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Outline</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Fonts</a></br> 
+          <a href="#" href="javascript:void(0)"> CSS Display</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Max-width</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Max-width</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Z-index</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Overflow</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Float</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Inline-block</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Align</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Combinators</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Pseudo-class</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Pseudo-element</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Opacity</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Navigation Bar</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Dropdowns</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Image Gallery</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Image Sprites</a></br>
+          <a href="#" href="javascript:void(0)"> CSS Attr Selectors</a></br>
+        </div>
+
+</div>
+  </div>
+
+  	<div class="pog" style="float:right; width: 64%">
+        <div style="overflow: auto;">
+          <h2 id="accordion">CSS Selectors</h2>
+          <a id="Prev" href="Syntax.html">Prev</a>
+          <a id="Next" href="#">Next</a>
+        </div>
+
+        <div class="edit" style="margin-top:10px;">
+        	A CSS selector selects the HTML element(s) you want to style.
+    	</div>
+
+        <div class="edit">
+        	<h3>CSS Selectors</h3>
+          CSS selectors are used to "find" (or select) the HTML elements you want to style.
+          <br><br>We can divide CSS selectors into five categories:
+          <ul>
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+            <li>Pseudo-class selectors (select elements based on a certain state)</li>
+            <li>Pseudo-elements selectors (select and style a part of an element)</li>
+            <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+          </ul>
+          This page will explain the most basic CSS selectors.
+        </div>
+        <div class="edit">
+          <h3>The CSS element Selector</h3>
+          The element selector selects HTML elements based on the element name.
+          <div class="exempllu">
+            <h3>Example</h3>
+            Here, all <div class="bck">&lt;p&gt;</div> elements on the page will be center-aligned, with a red text color: 
+            <div class="exempluu">
+              <span style="color:brown">
+                p
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span>
+                </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="edit">
+          <h3>The CSS id Selector</h3>
+          The id selector uses the id attribute of an HTML element to select a specific element.
+          <br><br>The id of an element is unique within a page, so the id selector is used to select one unique element!
+          <br><br>To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+          <div class="exempllu">
+            <h3>Example</h3>
+            The CSS rule below will be applied to the HTML element with id="para1": 
+            <div class="exempluu">
+              <span style="color:brown">
+                #para1
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span>
+                </span>
+            </div>
+          </div>
+          <div class="popup"><div class="note"><span style="font-weight: bold;">Note: </span>An id name cannot start with a number!</div></div>
+        </div>
+        
+        
+        <div class="edit">
+          <h3>The CSS class Selector</h3>
+          The class selector selects HTML elements with a specific class attribute.
+          <br><br>To select elements with a specific class, write a period (.) character, followed by the class name.
+          <div class="exempllu">
+            <h3>Example</h3>
+            In this example all HTML elements with class="center" will be red and center-aligned: 
+            <div class="exempluu">
+              <span style="color:brown">
+                .center
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span>
+                </span>
+            </div>
+          </div>
+          You can also specify that only specific HTML elements should be affected by a class.
+          <div class="exempllu">
+            <h3>Example</h3>
+            In this example only <div class="bck">&lt;p&gt;</div> elements with class="center" will be red and center-aligned:
+            <div class="exempluu">
+              <span style="color:brown">
+                p.center
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span>
+                </span>
+            </div>
+        </div>
+        HTML elements can also refer to more than one class.
+        <div class="exempllu">
+            <h3>Example</h3>
+            In this example the <div class="bck">&lt;p&gt;</div> element will be styled according to class="center" and to class="large":
+            <div class="exempluu">
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> class<span style="color:mediumblue">="center large"</span></span><span style="color:mediumblue">&gt;</span></span>This paragraph refers to two classes.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span> 
+                </span>
+            </div>
+        </div>
+        <div class="popup"><div class="note"><span style="font-weight: bold;">Note: </span>A class name cannot start with a number!</div></div>
+        <h3>The CSS Universal Selector</h3>
+          The universal selector (<div class="bck">*</div>) selects all HTML elements on the page.
+          <div class="exempllu">
+            <h3>Example</h3>
+            The CSS rule below will affect every HTML element on the page:  
+            <div class="exempluu">
+              <span style="color:brown">
+                *
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span>
+                </span>
+            </div>
+          </div>
+    </div>
+    <div class="edit">
+      <h3>The CSS Grouping Selector</h3>
+      The grouping selector selects all the HTML elements with the same style definitions.
+      <br><br>Look at the following CSS code (the <div class="bck">h1</div>, <div class="bck">h2</div>, and <div class="bck">p</div> elements have the same style definitions):
+      <div class="exemplu">
+        <div class="exempluu">
+        <span style="color:brown">
+                h1
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span>
+                </span>
+                <span style="color:brown">
+                <br><br>h2
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span>
+                </span>
+                <span style="color:brown">
+                <br><br>p
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span>
+                </span>
+          </div>
+      </div>
+      It will be better to group the selectors, to minimize the code.
+      <br><br>To group selectors, separate each selector with a comma.
+      <div class="exempllu">
+            <h3>Example</h3>
+            In this example we have grouped the selectors from the code above: 
+            <div class="exempluu">
+              <span style="color:brown">
+                h1,h2,p
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span>
+                </span>
+            </div>
+          </div>
+    </div>
+    <div class="edit">
+      <h3>All CSS Simple Selectors</h3>
+
+      <table>
+        <tr>
+          <th style="width:20%">Selector</th>
+          <th style="width:20%">Example</th>
+          <th>Example description</th>
+        </tr>
+        <tr>
+          <td>#<i>id</i></td>
+          <td>#firstname</td>
+          <td>Selects the element with id="firstname"</td>
+        </tr>
+        <tr>
+          <td>.<i>class</i></td>
+          <td>.intro</td>
+          <td>Selects all elements with class="intro"</td>
+        </tr>
+        <tr>
+          <td><em>element.class</em></td>
+          <td>p.intro</td>
+          <td>Selects only <div class="bck">&lt;p&gt;</div> elements with class="intro"</td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>*</td>
+          <td>Selects all elements</td>
+        </tr>
+        <tr>
+          <td><i>element</i></td>
+          <td>p</td>
+          <td>Selects all <div class="bck">&lt;p&gt;</div> elements</td>
+        </tr>
+        <tr>
+          <td><i>element,element,..</i></td>
+          <td>div, p</td>
+          <td>Selects all <div class="bck">&lt;div&gt;</div>; elements and all <div class="bck">&lt;p&gt;</div> elements</td>
+        </tr>
+      </table>
+      <div style="overflow: auto; margin-bottom: 20px; margin-top: 20px;">
+          <a id="Prev" href="Syntax.html">Prev</a>
+          <a id="Next" href="#">Next</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+		<script src="../../JS/JS.js"></script>
+</html>
